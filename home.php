@@ -9,16 +9,19 @@
 </head>
 <body>
   <div class="container mt-5">
-    <h2>BERWA SHOP Dashboard</h2>
+    <h2 class="m-5">BERWA SHOP Dashboard</h2>
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <a href="product.php" class="btn btn-primary btn-block">Add Product</a>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <a href="product_in.php" class="btn btn-primary btn-block">Product In</a>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <a href="productout.php" class="btn btn-primary btn-block">Product Out</a>
+      </div>
+      <div class="col-sm-3">
+        <a href="ProductInReport.php" class="btn btn-primary btn-block">ProductIn Report</a>
       </div>
     </div>
   </div>

@@ -1,4 +1,4 @@
-<?php
+ <?php
 include('home.php');
 $conn=mysqli_connect('localhost','root','','berwashop');
 
@@ -9,18 +9,21 @@ $conn=mysqli_connect('localhost','root','','berwashop');
       <div class="form-group">
         <label for="productCode">Product Code:</label>
 
-<select name="productcode" class="form-control" id="">
-    <?php
-$product="SELECT * FROM `product`";
-$res=mysqli_query($conn,$product);
-if(mysqli_num_rows($res)){
-foreach($res as $row){
+
+<select name="productCode" class="form-control" id="">
+<?php 
+$sql="SELECT * FROM `product`";
+$res=mysqli_query($conn,$sql);
+if(mysqli_num_rows($res)>0){
+  foreach($res as $data){
 ?>
-<option value="<?php echo $row['ProductCode'];?>"><?php echo $row['ProductName'];?></option>
-<?php
-}
-}
-?>
+<option value="<?pmvhp echo $data['ProductCode'];?>"><?php echo $data['ProductName'];?></option>
+
+  <?php
+  }
+}?>
+
+
 
 </select>
 
